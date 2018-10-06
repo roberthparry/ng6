@@ -9,15 +9,15 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<any> {
+  getUsers(): Observable<Object> {
     return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 
-  getUser(userId): Observable<any> {
+  getUser(userId): Observable<Object> {
     return this.http.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
   }
 
-  getPosts(): Observable<any> {
+  getPosts(): Observable<Object> {
     return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
 
